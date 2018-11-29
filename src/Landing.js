@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const divStyle = {
   width: '100%',
   height: '850px',
-  backgroundPosition: 'right 0.0001em bottom 0.0001px',
+  backgroundPosition: 'left 0px bottom 0px',
   backgroundImage: `url(${require('./websitepage.png')})`,
   backgroundSize: 'cover'
 };

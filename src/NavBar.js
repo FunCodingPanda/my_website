@@ -6,22 +6,28 @@ class NavBar extends Component {
   constructor(props) {
     super(props); 
     this.state = {
-
+      display: "none"
     }
+    this.openMenu = this.openMenu.bind(this)
   }
+  openMenu(e) {
+    e.preventDefault()
+      this.setState( state => ({ ...state, display: "block" }))
+  }
+
   render () {
     return (
-      <div class="topnav">
+      <div className="topnav">
           <Link to="./" className="active navbar-brand navbar-item" >
             <img className="navbar-logo" src="./typeface.png" width="90" height="40" alt="Logo" />
           </Link>
-        <div id="myLinks">
+        <div id="myLinks" style={{ display: this.state.display }}>
           <a href="#news">News</a>
           <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+          <Link to='/about'>About</Link>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="">
-          <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" className="icon" onClick={this.openMenu}>
+          <i className="fa fa-bars"></i>
         </a>
       </div>
     )

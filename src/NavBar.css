@@ -19,7 +19,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: black;
+  background-color: #333;
   position: relative;
 }
 
@@ -28,15 +28,20 @@ body {
 }
 
 .topnav a {
-  float: left;
   color: white;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  display: block;
 }
 
 .topnav a.icon {
-  float: right;
+  background: black;
+  display: block;
+  position: absolute;
+  margin-top: 14px;
+  right: 0;
+  top: 0;
 }
 
 .topnav a:hover {
@@ -45,5 +50,6 @@ body {
 }
 
 .active {
+  background-color: black;
   color: white;
 }
