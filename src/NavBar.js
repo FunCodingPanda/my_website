@@ -19,12 +19,13 @@ class NavBar extends Component {
     return (
       <div className="topnav">
           <Link to="./" className="active navbar-brand navbar-item" >
-            <img className="navbar-logo" src="./typeface.png" width="90" height="40" alt="Logo" />
+            <img className="navbar-logo" src="./typeface.png" width="100" height="30" alt="Logo" />
           </Link>
         <div id="myLinks" style={{ display: this.state.display }}>
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
           <Link to='/about'>About</Link>
+          <a href="#news">Resume</a>
+          <a href="#contact">Design Portfolio</a>
+          <a href="#contact">Coding Projects</a>
         </div>
         <a href="javascript:void(0);" className="icon" onClick={this.openMenu}>
           <i className="fa fa-bars"></i>

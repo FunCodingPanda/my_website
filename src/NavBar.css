@@ -1,7 +1,7 @@
 
 .navbar-item img.navbar-logo {
   margin-left: 10px;
-  max-height: 3rem;
+  max-height: 2rem;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
   position: relative;
 }
 
@@ -52,4 +52,9 @@ body {
 .active {
   background-color: black;
   color: white;
+}
+
+.fa {
+  font: normal normal normal 10px/0 FontAwesome;
+  font-size: x-large;
 }
