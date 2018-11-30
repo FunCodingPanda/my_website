@@ -3,6 +3,7 @@ import './Landing.css';
 import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import Particles from 'react-particles-js';
+import './Landing.css'
 
 const particlesOpt = {
       "particles": {
@@ -25,7 +26,7 @@ const particlesOpt = {
           },
           "move": {
               "random": true,
-              "speed": 0.4,
+              "speed": 1,
               "direction": "top",
               "out_mode": "out"
           },
@@ -63,8 +64,13 @@ class Landing extends Component {
         <Helmet>
           <style>{'body { background-color: black; }'}</style>
         </Helmet>
-        <Particles 
-          params={particlesOpt} />
+        <div id="particles">
+          <div className="content">
+            <img src="./ball.png" />
+          </div>
+          <Particles 
+            params={particlesOpt} />
+        </div>
       </div>
     )
   }

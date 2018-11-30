@@ -8,11 +8,15 @@ class NavBar extends Component {
     this.state = {
       display: "none"
     }
-    this.openMenu = this.openMenu.bind(this)
+    this.toggleMenu = this.toggleMenu.bind(this)
   }
-  openMenu(e) {
+  toggleMenu(e) {
     e.preventDefault()
+    if (this.state.display == "none") {
       this.setState( state => ({ ...state, display: "block" }))
+    } else {
+      this.setState( state => ({ ...state, display: "none" }))
+    }
   }
 
   render () {
@@ -27,7 +31,7 @@ class NavBar extends Component {
           <a href="#contact">Design Portfolio</a>
           <a href="#contact">Coding Projects</a>
         </div>
-        <a href="javascript:void(0);" className="icon" onClick={this.openMenu}>
+        <a href="javascript:void(0);" className="icon" onClick={this.toggleMenu}>
           <i className="fa fa-bars"></i>
         </a>
       </div>
