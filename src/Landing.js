@@ -66,7 +66,7 @@ class Landing extends Component {
         </Helmet>
         <div id="particles">
           <div className="content">
-            <img src="./ball.png" />
+            <img src="./planet2.png" />
           </div>
           <Particles 
             params={particlesOpt} />
