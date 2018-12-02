@@ -61,6 +61,7 @@ class Landing extends Component {
   render() {
     return (
       <div>
+        <img className="quote" src="./quote.png" />
         <Helmet>
           <style>{'body { background-color: black; }'}</style>
         </Helmet>
