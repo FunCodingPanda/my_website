@@ -26,7 +26,7 @@ const particlesOpt = {
           },
           "move": {
               "random": true,
-              "speed": 1,
+              "speed": 0.5,
               "direction": "top",
               "out_mode": "out"
           },
