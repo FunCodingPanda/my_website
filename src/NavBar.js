@@ -26,7 +26,7 @@ class NavBar extends Component {
             <img className="navbar-logo" src="./typeface.png" width="100" height="30" alt="Logo" />
           </Link>
         <div id="myLinks" style={{ display: this.state.display }}>
-          <Link to='/about'>About & Experience</Link>
+          <Link to='/about'>About Me</Link>
           <a href="#news">Coding Projects</a>
           <a href="#contact">Design Portfolio</a>
           <a href="#contact">Financial Projects</a>

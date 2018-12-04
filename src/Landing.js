@@ -61,13 +61,13 @@ class Landing extends Component {
   render() {
     return (
       <div>
-        <img className="quote" src="./quote.png" />
         <Helmet>
           <style>{'body { background-color: black; }'}</style>
         </Helmet>
         <div id="particles">
           <div className="content">
-            <img src="./planet2.png" />
+            <img className="planet" src="./planet2.png" />
+            <img className="quote" src="./quote.png" />
           </div>
           <Particles 
             params={particlesOpt} />
