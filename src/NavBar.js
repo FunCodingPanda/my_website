@@ -27,9 +27,7 @@ class NavBar extends Component {
           </Link>
         <div id="myLinks" style={{ display: this.state.display }}>
           <Link to='/about'>About Me</Link>
-          <a href="#news">Coding Projects</a>
-          <a href="#contact">Design Portfolio</a>
-          <a href="#contact">Financial Projects</a>
+          <Link to='/design'>Design Portfolio</Link>
         </div>
         <a href="javascript:void(0);" className="icon" onClick={this.toggleMenu}>
           <i className="fa fa-bars"></i>
