@@ -42,7 +42,7 @@ class Design extends Component {
             <p>
               I want to have a business card that would give the impression that I am software developer. Thus, I incorporate code into it. 
             </p>
-            <img src="./SophieNgo.jpg" />
+            <img src="./sophiengo.jpg" />
           </div>
 
           <div className="design">
