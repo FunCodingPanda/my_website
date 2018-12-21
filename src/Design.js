@@ -57,7 +57,7 @@ class Design extends Component {
           <div className="design">
             <h3>Man in the High Castle Book Cover</h3>
             <p>
-              Man in the high castle is a very interesting book. I really enjoyed learning history growing up. It is about an alternative universe where the allies lost to the axis during WWII. 
+              Man in the high castle is a very interesting book. I really enjoyed learning history growing up. It is about an alternative universe where the Allies lost to the Axis during WWII. 
             </p>
             <img src="./Castle.jpg" />
           </div>
