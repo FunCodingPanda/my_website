@@ -11,7 +11,7 @@ class Design extends Component {
           <div className="design">
             <h3>Japanese Restaurant Menu</h3>
             <p>
-              This is a menu for a fictitious resturant that I think could be popular in Toronto. I used Arial front for the header and Minion Pro 
+              This is a menu for a fictitious resturant that I think could be popular in Toronto. I used Arial and Minion Pro 
               typeface for the header. I picked this particular type of food and drinks because I love Matcha and Japanese food. It is generally more healthy and filling. 
             </p>
             <img src="./Menu/JapaneseDessertMenu2.jpg" />
@@ -21,8 +21,8 @@ class Design extends Component {
           <div className="design">
             <h3>Mimoo</h3>
             <p>
-              This is a brochure for a financial company that does not yet exist. Even though orange is usually not associated with financial products, but that is changing. 
-              I believe Mimoo is product that could be very useful and convenient for the general public. 
+              This is a brochure for a financial company that does not exist. Even though orange is usually not associated with financial products, but that is changing. 
+              I believe Mimoo is product that could be very useful and convenient for the general public. For more information, read the brochure.
             </p>
             <img src="./mimoo/Assignment3Mimoo.jpg" />
             <img src="./mimoo/Assignment3Mimoo2.jpg" />
@@ -31,7 +31,7 @@ class Design extends Component {
           <div className="design">
             <h3>Space Hat Typeface</h3>
             <p>
-              I never thought I would have made my own typeface. I call it Space Hat. I have always been into space and it happens to the theme of my website. Hence, I made the 
+              I never thought I would have made my own typeface. I call it Space Hat. I have always been into space and it happens to be the theme of my website. Hence, I made the 
               typeface to suit my website. 
             </p>
             <img src="./alphabet.png" />
@@ -40,7 +40,7 @@ class Design extends Component {
           <div className="design">
             <h3>Business Card</h3>
             <p>
-              I want to have a business card that would give the impression that I am software developer. Thus, I incorporate code into it. 
+              I want to have a business card that would give the impression that I enjoy working with software development. Thus, I incorporate code into it. 
             </p>
             <img src="./sophiengo.jpg" />
           </div>

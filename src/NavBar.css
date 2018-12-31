@@ -23,6 +23,7 @@
 
 .topnav #myLinks {
   display: none;
+  text-align: right;
 }
 
 .topnav a {
