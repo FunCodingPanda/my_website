@@ -12,7 +12,11 @@
     "react-redux": "^5.1.1",
     "react-router-dom": "^4.4.0-beta.6",
     "react-scripts": "2.1.1",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "styled-button-component": "^3.0.1",
+    "styled-components": "^4.2.0",
+    "styled-container-component": "^3.0.2",
+    "styled-navbar-component": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

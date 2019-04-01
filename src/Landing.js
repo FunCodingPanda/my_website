@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Landing.css';
-import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import Particles from 'react-particles-js';
 import './Landing.css'
