@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import Particles from 'react-particles-js';
 import './Landing.css'
+import NavBar from './NavBar';
 
 const particlesOpt = {
       "particles": {
@@ -64,6 +65,7 @@ class Landing extends Component {
         <Helmet>
           <style>{'body { background-color: black; }'}</style>
         </Helmet>
+        <NavBar />
         <div id="particles">
           <div className="content">
             <div className="title">
