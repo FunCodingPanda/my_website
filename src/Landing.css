@@ -6,19 +6,37 @@
 }
 
 .content {
-  text-align: center;
   background-color: transparent;
-  position: absolute;
-  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
   left: 0;
-  right: 0;
-  margin: auto;
   margin-top: 100px;
+  margin: auto;
+  max-width: 800px;
+  position: absolute;
+  right: 0;
+  text-align: center;
 }
 
 .content .planet {
   width: 500px;
   height: 500px;
+}
+
+.content .title {
+  color: goldenrod;
+  font-family: "FreeLine";
+  font-size: 48px;
+}
+
+.content .subtitle {
+  color: white;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 16px;
+  letter-spacing: 20px;
+  margin-top: 8px;
 }
 
 .quote {

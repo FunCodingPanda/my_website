@@ -22,9 +22,6 @@ class NavBar extends Component {
   render () {
     return (
       <div className="topnav">
-          <Link to="./" className="active navbar-brand navbar-item" >
-            <img className="navbar-logo" src="./typeface.png" width="100" height="30" alt="Logo" />
-          </Link>
         <div id="myLinks" style={{ display: this.state.display }}>
           <Link to='/about'>About Me</Link>
           <Link to='/design'>Design Portfolio</Link>

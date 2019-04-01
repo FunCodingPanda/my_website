@@ -1,7 +1,23 @@
-html {
+html, body {
+  height: 100%;
   margin: 0;
 }
 
-body {
-  margin: 0;
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#particles {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "FreeLine";
+  src: url("/fonts/FreeLine.woff2") format("woff2"),
+       url("/fonts/FreeLine.woff") format("woff"),
+       url("/fonts/FreeLine.otf") format("opentype"),
+       url("/fonts/FreeLine.ttf") format("ttf"),
+       url("/fonts/FreeLine.eot") format("embedded-opentype");
 }

@@ -15,14 +15,15 @@
 }
 
 .topnav {
-  overflow: hidden;
   background-color: black;
   position: relative;
   font-family: verdana;
+  min-height: 60px;
 }
 
 .topnav #myLinks {
   display: none;
+  margin-top: 62px;
   text-align: right;
 }
 

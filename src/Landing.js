@@ -60,19 +60,23 @@ const particlesOpt = {
 class Landing extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Helmet>
           <style>{'body { background-color: black; }'}</style>
         </Helmet>
         <div id="particles">
           <div className="content">
-            <img className="planet" src="./planet2.png" />
-            <img className="quote" src="./quote.png" />
+            <div className="title">
+              Sophie &nbsp;Ngo
+            </div>
+            <div className="subtitle">
+              data scientist
+            </div>
           </div>
           <Particles 
             params={particlesOpt} />
         </div>
-      </div>
+      </React.Fragment>
     )
   }
 }

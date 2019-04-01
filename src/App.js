@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <React.Fragment>
         <NavBar />
         <MainRouter />
-      </div>
+      </React.Fragment>
     )
   }
 }
