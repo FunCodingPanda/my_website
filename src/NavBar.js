@@ -1,38 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
-
-class NavBar extends Component {
+ 
+export class NavBar extends React.Component {
   constructor(props) {
-    super(props); 
+    super(props);
     this.state = {
-      display: "none"
-    }
-    this.toggleMenu = this.toggleMenu.bind(this)
-  }
-  toggleMenu(e) {
-    e.preventDefault()
-    if (this.state.display == "none") {
-      this.setState( state => ({ ...state, display: "block" }))
-    } else {
-      this.setState( state => ({ ...state, display: "none" }))
-    }
-  }
+      hidden: true,
+    };
 
-  render () {
-    return (
-      <div className="topnav">
-        <div id="myLinks" style={{ display: this.state.display }}>
-          <Link to='/about'>About Me</Link>
-          <Link to='/design'>Design Portfolio</Link>
-        </div>
-        <a href="javascript:void(0);" className="icon" onClick={this.toggleMenu}>
-          <i className="fa fa-bars"></i>
-        </a>
-      </div>
-    )
+    this.handleOpenCloseNav = this.handleOpenCloseNav.bind(this);
   }
-}
+ 
+  handleOpenCloseNav() {
+    this.setState({
+      hidden: !this.state.hidden,
+    });
+  }
+ 
+  render() {
+    const { hidden } = this.state;
+    return (
+      <nav className="nav">
+        <Link className={hidden ? 'hide' : 'show'} to='/'>Home</Link>
+        <Link className={hidden ? 'hide' : 'show'} to='/about'>About</Link>
+        <Link className={hidden ? 'hide' : 'show'} to='/design'>Design</Link>
+        <button onClick={this.handleOpenCloseNav}>&#9776;</button>
+      </nav>
+    );
+  }
+};
 
 export default NavBar;
-

@@ -28,30 +28,6 @@ export class WhiteNavBar extends React.Component {
         <button onClick={this.handleOpenCloseNav}>&#9776;</button>
       </nav>
     );
-    // return (
-    //   <Container fluid>
-    //     <Container fluid>
-    //       <Navbar expandSm light>
-    //         <Nav start>
-    //           <Button
-    //             light
-    //             outline
-    //             toggleCollapse
-    //             expandSm
-    //             onClick={() => this.handleOpenCloseNav()}
-    //           >
-    //             <span>&#9776;</span>
-    //           </Button>
-    //         </Nav>
-    //         <Nav start collapse expandSm hidden={hidden}>
-    //           <NavbarLink light ><Link to='/'>Home</Link></NavbarLink>
-    //           <NavbarLink light active ><Link to='/about'>About</Link></NavbarLink>
-    //           <NavbarLink light ><Link to='/design'>Design Portfolio</Link></NavbarLink>
-    //         </Nav>
-    //       </Navbar>
-    //     </Container>
-    //   </Container>
-    // );
   }
 };
 
