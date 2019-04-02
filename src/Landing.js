@@ -58,6 +58,20 @@ const particlesOpt = {
   }
 
 class Landing extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      audioPlaying: false
+    };
+    this.toggleAudio = this.toggleAudio.bind(this);
+  }
+
+  toggleAudio() {
+    this.setState({
+      audioPlaying: !this.state.audioPlaying
+    });
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -77,6 +91,16 @@ class Landing extends Component {
           <Particles 
             params={particlesOpt} />
         </div>
+        <audio muted={!this.state.audioPlaying} id="audio" autoPlay loop>
+          <source src="Imperial March.mp3" type="audio/mpeg" />
+        </audio>
+        <button className="volume-button" onClick={this.toggleAudio}>
+          {
+            this.state.audioPlaying
+            ? <i className="fa fa-volume-up"></i>
+            : <i className="fa fa-volume-off"></i>
+          }
+        </button>
       </React.Fragment>
     )
   }
