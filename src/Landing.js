@@ -67,6 +67,7 @@ class Landing extends Component {
   }
 
   toggleAudio() {
+    document.getElementById("audio").play();
     this.setState({
       audioPlaying: !this.state.audioPlaying
     });
@@ -85,13 +86,13 @@ class Landing extends Component {
               Sophie &nbsp;Ngo
             </div>
             <div className="subtitle">
-              data scientist
+              renaissance woman
             </div>
           </div>
           <Particles 
             params={particlesOpt} />
         </div>
-        <audio muted={!this.state.audioPlaying} id="audio" autoPlay loop>
+        <audio muted={!this.state.audioPlaying} id="audio" loop>
           <source src="Imperial March.mp3" type="audio/mpeg" />
         </audio>
         <button className="volume-button" onClick={this.toggleAudio}>
